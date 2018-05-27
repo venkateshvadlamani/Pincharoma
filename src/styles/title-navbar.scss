@@ -1,0 +1,36 @@
+@import './site-variables.scss';
+
+// Styling the header and the Navbar 
+header.masthead { 
+    .masthead-inner {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding: 1rem;
+        background-color: $color-primary;
+        border-top: 10px solid $color-primary-dark;
+        color: $text-secondary;
+        .site-title {
+            grid-column: 1/5;
+            align-self: center;
+            justify-self: left;
+            font-size: 300%;
+        }
+        .main-nav {            
+            grid-column: 11/13;
+            display: flex;
+            font-size: 120%;
+            justify-content: left;
+            align-self: center;
+            .hor-menu {
+                display: flex;
+                a {
+                    margin: 0.5rem;
+                    color: $text-secondary;                    
+                    &:hover{
+                        border-bottom: 10px solid $color-secondary;                        
+                    }
+                }
+            }
+        }
+    }
+}

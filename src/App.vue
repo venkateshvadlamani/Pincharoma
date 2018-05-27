@@ -6,7 +6,7 @@
     <div class="masthead-inner">
 
       <div class="site-title">
-        <h1>Pinchorama</h1>
+        <h1>Pincharoma</h1>
       </div>
 
       <nav class="main-nav">
@@ -19,13 +19,42 @@
     </div>
   </header>
 
+  <main class="deals">
 
+    <article class="malabar-spice">
+      <a href="https://placeholder.com">
+        <img src="http://via.placeholder.com/350x250">
+      </a>
+      <h2>Malabar Spice</h2>
+      <h4>Pincharoma Malabar Curry powder, 2 oz</h4>
+      <p>Best with</p>
+      <ul>
+        <li>Fish curry</li>
+        <li>Jumbo Shrimp</li>
+        <li>Crawfish</li>
+        <li>And a nice bottle of Pinot Noir</li>
+      </ul>
+      <button>Add to Cart</button>
+    </article>
 
-  <section class="malabar">
-    <h2>Malabar</h2>
-    <button>Add to Cart</button>
-    <img src="">
-  </section>
+    <article class="sale-item">
+      <a href="https://placeholder.com">
+        <img src="http://via.placeholder.com/350x250">
+      </a>
+      <h2>Malabar Spice</h2>
+      <h4>Pincharoma Malabar Curry powder, 2 oz</h4>
+      <p>Best with</p>
+      <ul>
+        <li>Fish curry</li>
+        <li>Jumbo Shrimp</li>
+        <li>Crawfish</li>
+        <li>And a nice bottle of Pinot Noir</li>
+      </ul>
+      <button>BUY NOW</button>
+    </article>
+
+  </main>
+
 
   <section class="bombay-street">
     <h2>Bombay Street</h2>

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Shadow');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Monoton&effect=neon');
+
+    
+// Font Variables
+$opensans: 'Open Sans', sans-serif;    
+$comfortaa: 'Comfortaa', cursive;
+$londrinashadow: 'Londrina Shadow', cursive;
+$slabo: 'Slabo 27px', serif;
+
+//Brand Colors - Orange Theme
+$orange-red: #e31d21;
+$orange: #CE4702;
+$bright-yellow: #fdd118;
+$dull-yellow: #f4a711;
+$dark-blue: #2B426F;
+$light-blue: #4e94cf;
+
+
+//Brand Colors - Grape Theme
+$grape: #953188;
+$dark-grape: #532e73;
+$bright-green: #42af6b;
+$neon-green: #cdd949;
+$grape-red: #d31322;
+$grape-pink: #e63e71;
+
+//Text Colors
+$grey: #444;
+$white: #fff;
+
+//Site Colors
+$color-primary: $orange;
+$color-accent: $bright-yellow;
+$color-background: $grey;

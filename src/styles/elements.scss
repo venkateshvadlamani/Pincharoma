@@ -5,13 +5,17 @@ ul{
 
 a {
     text-decoration: none;    
-    }
+}
+
 
 button.issecondary {
         background: $color-secondary;
         color: $white;
         border: 2px solid $color-secondary;
         margin: 0.5rem;
+        padding: 0.5rem;
+        margin-top: auto;
+        font-size: 1rem;        
         &:hover {
                 background: $text-secondary;
                 color: $color-secondary;
@@ -23,9 +27,12 @@ button.isgrey {
         color: $grey;
         border: 2px solid $grey;
         margin: 0.5rem;
+        padding: 0.5rem;
+        margin-top: auto;
+        font-size: 1rem;
         &:hover {
-                background: $grey;
-                color: $white;
-                border: 2px solid $grey;
-            }
+            background: $grey;
+            color: $white;
+            border: 2px solid $grey;
+        }
     }

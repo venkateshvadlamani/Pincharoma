@@ -1,6 +1,5 @@
 <template>
-  <div class="home">
-    <h1>{{ msg }}</h1>
+
     <main class="deals">
       <article class="malabar-spice">
         <a href="#">
@@ -12,7 +11,7 @@
         <button>ADD TO CART</button>
       </article>    
     </main>    
-  </div>
+
 </template>
 
 <script>
@@ -25,3 +24,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../styles/landing.scss";
+</style>

@@ -1,3 +1,6 @@
+@import './site-variables.scss';
+@import './elements.scss';
+
 // Styling the header and the Navbar 
 header.masthead { 
     .masthead-inner {
@@ -7,22 +10,21 @@ header.masthead {
         background-color: $color-primary;
         border-top: 15px solid $color-primary-dark;
         border-bottom: 5px solid $color-primary-dark;
-        color: $text-secondary;
+
         .site-title {
             grid-column: 1/5;
             align-self: center;
             justify-self: left;
-            font-size: 300%;
         }
         .main-nav {            
             grid-column: 10/13;
             display: flex;
-            font-size: 120%;
             justify-content: left;
             align-self: center;
             .hor-menu {
                 display: flex;
                 a {
+                    padding: 0;
                     margin: 0.5rem;
                     color: $text-secondary;                    
                     &:hover{

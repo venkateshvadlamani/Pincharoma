@@ -14,7 +14,9 @@
             <h4>{{ product.productTitle }}</h4>
             <p>{{ product.productDescription}}</p>
             <div class="select-product">
-                <button class="isgrey" v-on:click="counter +=1">Read more</button>
+                <router-link :to="{name:'ProductDetail', params:{id:product.id}}">
+                  <button class="isgrey">Read more</button>
+                </router-link>
                 <button class="issecondary" v-on:click="counter +=1">Add to Cart</button>
             </div>
           </article>    
@@ -28,33 +30,17 @@
 </template>
 
 <script>
-import axios from "axios";
+import store from "../store/index.js";
+
 export default {
   name: "Home",
-
-  data() {
-    return {
-      counter: 0,
-      productList: {}
-    };
-  },
-
-  created() {
-    this.fetchData();
-  },
-
-  methods: {
-    fetchData() {
-      axios
-        .get("http://localhost:3000/ProductList")
-        .then(resp => {
-          this.productList = resp.data;
-          console.log(resp);
-        })
-        .catch(err => {
-          console.log(err);
-        });
+  computed: {
+    productList: function() {
+      return this.$store.getters.products;
     }
+  },
+  created() {
+    store.dispatch("fetchProducts");
   }
 };
 </script>

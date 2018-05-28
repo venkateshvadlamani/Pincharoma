@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
+@import url('https://fonts.googleapis.com/css?family=Londrina+Shadow');
 
 // Font Variables
 $roboto-slab: 'Roboto Slab', serif;
 $raleway: 'Raleway', sans-serif;
+$londrina-shadow:  'Londrina Shadow', cursive;
 
 // Site Fonts
 $family-serif: $roboto-slab;
@@ -22,6 +23,15 @@ $indigo-dark: #002984;
 $orange: #ff5722;
 $orange-dark: #c41c00;
 $orange-light: #ff8a50;
+$green: #4caf50;
+$green-light: #80e27e;
+$green-dark: #087f23;
+$yellow: #ffeb3b;
+$yellow-light: #ffff72;
+$yellow-dark: #c8b900;
+$red: #f44336;
+$red-light: #ff7961;
+$red-dark: #ba000d;
 
 $color-primary: #3f51b5;
 $color-primary-light: #757de8;
@@ -33,3 +43,4 @@ $color-secondary-dark: #c41c00;
 // Font Colors
 $text-primary: $grey;
 $text-secondary: $white;
+

@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+// Third party
+@import '../../node_modules/bulma/bulma.sass';
 
 // Font Variables
-$opensans: 'Open Sans', sans-serif;    
-$comfortaa: 'Comfortaa', cursive;
-$londrinashadow: 'Londrina Shadow', cursive;
-$slabo: 'Slabo 27px', serif;
 $roboto-slab: 'Roboto Slab', serif;
+$raleway: 'Raleway', sans-serif;
 
-//Site font
+// Site Fonts
 $family-serif: $roboto-slab;
-$family-sans-serif: 'Raleway', sans-serif;
+$family-sans-serif: $raleway;
 
-//font Colors
+// Font Colors
 $text-primary: #444;
 $text-secondary: #fff;
 

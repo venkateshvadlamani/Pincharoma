@@ -9,13 +9,21 @@ main.deals {
         display: flex;
         flex-flow: column;
         justify-content: space-around;
-        border: 7px solid #444;
+        margin: 0.5rem;
+        border: 5px solid #444;
         padding: 1rem;
         font-family: $family-sans-serif;
+        a {
+            align-self: center;    
+            justify-self: center;
+        }
         h2 {
             margin: 0;            
+            padding: 0.5rem;
             font-family: $family-serif;
-            height: 150%
+            font-weight: bold;
+            height: 200%;
+            align-self: center;
         }
         button {
             margin-top: auto;
@@ -25,10 +33,6 @@ main.deals {
             border: none;
             font-size: 1.5rem;
         }
-    }
-    
-    .malabar-spice  {
-
     }
 
 }

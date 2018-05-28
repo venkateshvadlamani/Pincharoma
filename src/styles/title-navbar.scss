@@ -7,7 +7,8 @@ header.masthead {
         grid-template-columns: repeat(12, 1fr);
         padding: 1rem;
         background-color: $color-primary;
-        border-top: 10px solid $color-primary-dark;
+        border-top: 15px solid $color-primary-dark;
+        border-bottom: 5px solid $color-primary-dark;
         color: $text-secondary;
         .site-title {
             grid-column: 1/5;
@@ -16,7 +17,7 @@ header.masthead {
             font-size: 300%;
         }
         .main-nav {            
-            grid-column: 11/13;
+            grid-column: 10/13;
             display: flex;
             font-size: 120%;
             justify-content: left;

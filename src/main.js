@@ -1,7 +1,14 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App";
+import router from "./Router";
+
+Vue.config.productionTip = false;
 
 new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+  el: "#app",
+  router,
+  template: "<App/>",
+  components: {
+    App
+  }
+});

@@ -28,10 +28,15 @@ main.deals {
         }
         button {
             margin-top: auto;
-
             padding: 0.5rem;
             font-size: 1.5rem;
         }
     }
+
+    .select-product {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        }
 
 }

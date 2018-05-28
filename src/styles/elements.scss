@@ -7,13 +7,25 @@ a {
     text-decoration: none;    
     }
 
-button {
+button.issecondary {
         background: $color-secondary;
-        color: $text-secondary;
-        border: none;
+        color: $white;
+        border: 2px solid $color-secondary;
+        margin: 0.5rem;
         &:hover {
                 background: $text-secondary;
                 color: $color-secondary;
                 border: 2px solid $color-secondary;
+            }
+    }
+button.isgrey {
+        background: $white;
+        color: $grey;
+        border: 2px solid $grey;
+        margin: 0.5rem;
+        &:hover {
+                background: $grey;
+                color: $white;
+                border: 2px solid $grey;
             }
     }

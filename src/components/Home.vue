@@ -11,7 +11,10 @@
             <h2>{{ product.productName }} {{ product.itemPrice }}</h2>    
             <h4>{{ product.productTitle }}</h4>
             <p>{{ product.productDescription}}</p>
-            <button v-on:click="counter +=1">ADD TO CART</button>
+            <div class="select-product">
+                <button class="isgrey" v-on:click="counter +=1">Read more</button>
+                <button class="issecondary" v-on:click="counter +=1">ADD TO CART</button>
+            </div>
           </article>    
         </li>
       </ul>

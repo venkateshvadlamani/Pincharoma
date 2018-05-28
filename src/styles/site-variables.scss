@@ -10,11 +10,12 @@ $raleway: 'Raleway', sans-serif;
 $family-serif: $roboto-slab;
 $family-sans-serif: $raleway;
 
-// Font Colors
-$text-primary: #444;
-$text-secondary: #fff;
+
 
 //Site Colors
+$grey: #444;
+$white: #fff;
+
 $indigo: #3f51b5;
 $indigo-light: #757de8;
 $indigo-dark: #002984;    
@@ -29,3 +30,6 @@ $color-secondary: #ff5722;
 $color-secondary-light: #ff8a50;
 $color-secondary-dark: #c41c00;
 
+// Font Colors
+$text-primary: $grey;
+$text-secondary: $white;

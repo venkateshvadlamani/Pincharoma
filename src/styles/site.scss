@@ -1,14 +1,6 @@
 @import './reset.scss';
 @import './site-variables.scss';
-@import './title-navbar.scss';
+@import './navbar.scss';
 @import './landing.scss';
-
-//style commonly used elements
-ul{
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
+@import './elements.scss';
 

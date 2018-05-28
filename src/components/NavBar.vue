@@ -11,7 +11,6 @@
         <ul class="hor-menu">
           <li><a href="#"><router-link to="/">Home</router-link></a></li>
           <li><a href="#"><router-link :to="{name: 'About'}">About</router-link></a></li>
-          <li><a href="#"><router-link :to="{name: 'Contact'}">Contact</router-link></a></li>
           <li><a href="#"><router-link :to="{name: 'Cart'}">Cart</router-link></a></li>
         </ul>
       </nav>

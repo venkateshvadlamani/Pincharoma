@@ -22,7 +22,6 @@
           </article>    
         </li>
       </ul>
-
     </main>    
 
 

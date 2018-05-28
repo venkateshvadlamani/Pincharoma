@@ -21,8 +21,6 @@ export default new Vuex.Store({
         .get("http://localhost:3000/ProductList")
         .then(resp => {
           context.commit('setProducts', resp.data);
-          console.log("AJAX CALL")
-          console.log(resp.data);
         })
         .catch(err => {
           console.log(err);

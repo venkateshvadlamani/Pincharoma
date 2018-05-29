@@ -31,11 +31,10 @@ export default new Vuex.Store({
     //add to cart
     addToCart(context, product) {
       //add product to cart.
-      console.log("ADD TO CART ACTION")
-      context.commit('addToCart, product')
+      console.log("ADD TO CART ACTION PRODUCT IT " + product)
+      context.commit('addToCart', product)
       //else give out of stock message
     }
-
   },
 
   mutations: {
@@ -44,7 +43,7 @@ export default new Vuex.Store({
       state.products = products
     },
     addToCart(state, product) {
-
+      state.cart = product
     }
 
   }

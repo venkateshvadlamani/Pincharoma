@@ -1,6 +1,6 @@
 <template>
   <div class="cart">
-    <h1>{{ msg }}</h1>
+    <h1>{{ cart }}</h1>
   </div>
 </template>
 
@@ -8,12 +8,9 @@
 export default {
   name: "Cart",
   computed: {
-    cart: function() {
+    cart: function() {      
       return this.$store.getters.cart;
     }
   },
-  created() {
-    store.dispatch("fetchProducts");
-  }
 };
 </script>

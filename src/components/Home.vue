@@ -23,7 +23,7 @@
                   <router-link :to="{name:'ProductDetail', params:{id:product.id}}">
                     <button class="isgrey">Read more</button>
                   </router-link>
-                  <button class="issecondary" v-on:click="counter +=1">Add to Cart</button>
+                  <button class="issecondary" v-on:click="addToCart(product.id)">Add to Cart</button>
               </div>
             </div>
           </article>    
@@ -48,6 +48,11 @@ export default {
   },
   created() {
     store.dispatch("fetchProducts");
+  },
+  methods: {
+    addToCart: function(productID){
+      store.dispatch("addToCart", productID)
+    }
   }
 };
 </script>

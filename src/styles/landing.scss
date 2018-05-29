@@ -2,7 +2,7 @@ main.deals {
 
     article.product {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 300px 2fr;
         grid-gap: 1rem;
         margin: 1rem;
         padding: 1rem;     
@@ -12,8 +12,7 @@ main.deals {
             img {
                 display: block;
                 width: 100%;    
-            }            
-
+                }            
             }
         .productdetails {
             grid-column: 2/3;    

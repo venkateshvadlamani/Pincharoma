@@ -7,10 +7,13 @@
 <script>
 export default {
   name: "Cart",
-  data() {
-    return {
-      msg: "Cart"
-    };
+  computed: {
+    cart: function() {
+      return this.$store.getters.cart;
+    }
+  },
+  created() {
+    store.dispatch("fetchProducts");
   }
 };
 </script>

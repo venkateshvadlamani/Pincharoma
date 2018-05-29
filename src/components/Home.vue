@@ -2,26 +2,34 @@
 <div class="productlist">
 
     <main class="deals">
+
       <ul id="list-of-products">
         <li v-for="product in productList" v-bind:key="product.id">
-          <article class="malabar-spice">
-            <a href="#">
-              <router-link :to="{name:'ProductDetail', params:{id:product.id}}">
-                <img src="http://via.placeholder.com/350x250">
-              </router-link>
-            </a>      
-            <h2>{{ product.productName }} {{ product.itemPrice }}</h2>    
-            <h4>{{ product.productTitle }}</h4>
-            <p>{{ product.productDescription}}</p>
-            <div class="select-product">
+          <article class="product">
+            <div class="productimage">
+              <a href="#">
                 <router-link :to="{name:'ProductDetail', params:{id:product.id}}">
-                  <button class="isgrey">Read more</button>
+                  <img src="http://via.placeholder.com/250x150">
                 </router-link>
-                <button class="issecondary" v-on:click="counter +=1">Add to Cart</button>
+              </a>      
+            </div>
+
+            <div class="productdetails">
+              <div class="title-price">
+                <h2>{{ product.productTitle }}</h2>    
+                <h1>Price: {{ product.itemPrice }}</h1>
+              </div>
+              <div class="select-product">
+                  <router-link :to="{name:'ProductDetail', params:{id:product.id}}">
+                    <button class="isgrey">Read more</button>
+                  </router-link>
+                  <button class="issecondary" v-on:click="counter +=1">Add to Cart</button>
+              </div>
             </div>
           </article>    
         </li>
       </ul>
+
     </main>    
 
 

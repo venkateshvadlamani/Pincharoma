@@ -8,11 +8,13 @@ Vue.use(Vuex)
 export default new Vuex.Store({
 
   state: {
-    products: []
+    products: [],
+    cart: []
   },
 
   getters: { //computed properties
-    products: state => state.products
+    products: state => state.products,
+    cart: state => state.cart
   },
 
   actions: { // methods all API will be here
@@ -25,21 +27,24 @@ export default new Vuex.Store({
         .catch(err => {
           console.log(err);
         });
-
-      //add to cart
-      //addToCart(context, product) {
-        //add product to cart.
-
-        //else give out of stock message
-      //}
-
+    },
+    //add to cart
+    addToCart(context, product) {
+      //add product to cart.
+      console.log("ADD TO CART ACTION")
+      context.commit('addToCart, product')
+      //else give out of stock message
     }
+
   },
 
   mutations: {
     setProducts(state, products) {
       //update products
       state.products = products
+    },
+    addToCart(state, product) {
+
     }
 
   }

@@ -15,8 +15,10 @@
             </div>
 
             <div class="productdetails">
-              <div class="title-price">
-                <h2>{{ product.productTitle }}</h2>    
+              <div class="title">
+                <h2>{{ product.productTitle }}</h2> 
+              </div>   
+                <div class="price">                  
                 <h1>Price: {{ product.itemPrice }}</h1>
               </div>
               <div class="select-product">

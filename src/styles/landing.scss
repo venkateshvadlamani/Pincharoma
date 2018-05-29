@@ -18,7 +18,11 @@ main.deals {
             grid-column: 2/3;    
             align-self: center;        
             }
-        .title-price {
+        .title {
+            margin: 0.5rem;
+            padding-bottom: 1rem;
+            }
+        .price {
             margin: 0.5rem;
             padding-bottom: 1rem;
             }

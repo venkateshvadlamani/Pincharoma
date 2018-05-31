@@ -6,10 +6,12 @@ header.masthead {
     .masthead-inner {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        padding: 1rem;
-        background-color: $color-primary;
-        border-top: 15px solid $color-primary-dark;
-        border-bottom: 5px solid $color-primary-dark;
+        color: $color-primary;
+        padding-left: 2rem;
+        h1 {
+            font-size: 4rem;
+            margin:0;
+            }
 
         .site-title {
             grid-column: 1/5;
@@ -26,7 +28,7 @@ header.masthead {
                 a {
                     padding: 0;
                     margin: 0.5rem;
-                    color: $text-secondary;                    
+                    color: $color-primary;                    
                     &:hover{
                         border-bottom: 10px solid $color-secondary;                        
                     }

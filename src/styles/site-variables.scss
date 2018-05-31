@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat:300');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Londrina+Shadow');
 
 // Font Variables
-$roboto-slab: 'Roboto Slab', serif;
-$raleway: 'Raleway', sans-serif;
-$londrina-shadow:  'Londrina Shadow', cursive;
+$Montserrat: 'Montserrat', sans-serif;
+$Merriweather: 'Merriweather', serif;
+$Londrina-shadow:  'Londrina Shadow', cursive;
 
 // Site Fonts
-$family-serif: $roboto-slab;
-$family-sans-serif: $raleway;
+$family-serif: $Merriweather;
+$family-sans-serif: $Montserrat;
 
 
 
@@ -17,6 +17,9 @@ $family-sans-serif: $raleway;
 $grey: #444;
 $white: #fff;
 
+$royal-purple: #7851a9;
+$royal-purple-light: #a97edb;
+$royal-purple-dark: #492679;   
 $indigo: #3f51b5;
 $indigo-light: #757de8;
 $indigo-dark: #002984;    
@@ -33,9 +36,9 @@ $red: #f44336;
 $red-light: #ff7961;
 $red-dark: #ba000d;
 
-$color-primary: $indigo;
-$color-primary-light: $indigo-light;
-$color-primary-dark: $indigo-dark;
+$color-primary: $royal-purple;
+$color-primary-light: $royal-purple-light;
+$color-primary-dark: $royal-purple-dark;
 $color-secondary: $orange;
 $color-secondary-light: $orange-light;
 $color-secondary-dark: $orange-dark;

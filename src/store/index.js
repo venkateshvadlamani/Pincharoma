@@ -20,7 +20,7 @@ export default new Vuex.Store({
   actions: { // methods all API will be here
     fetchProducts(context) {
       axios
-        .get("http://localhost:3000/ProductList")
+        .get("http://localhost:3000/Products")
         .then(resp => {
           context.commit('setProducts', resp.data);
         })

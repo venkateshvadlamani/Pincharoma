@@ -4,6 +4,7 @@ import Home from '../components/Home'
 import About from '../components/About'
 import Cart from '../components/Cart'
 import ProductDetail from '../components/ProductDetail'
+import Test from '../components/Test.vue'
 
 Vue.use(Router)
 
@@ -27,6 +28,11 @@ export default new Router({
       path: '/productdetail/:id',
       name: 'ProductDetail',
       component: ProductDetail
+    },
+    {
+      path: '/test/',
+      name: 'Test',
+      component: Test
     }
 
 

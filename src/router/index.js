@@ -4,7 +4,8 @@ import Home from '../components/Home'
 import About from '../components/About'
 import Cart from '../components/Cart'
 import ProductDetail from '../components/ProductDetail'
-import Test from '../components/Test.vue'
+import Catalog from '../components/Catalog'
+import Test from '../components/Test'
 
 Vue.use(Router)
 
@@ -13,6 +14,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/catalog',
+      name: 'Catalog',
+      component: Catalog
     },
     {
       path: '/about',

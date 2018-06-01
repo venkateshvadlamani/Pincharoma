@@ -22,10 +22,10 @@ export default {
   methods: {
     fetchData() {
       axios
-        .get("http://localhost:3000/ProductList/" + this.$route.params.id + "/")
+        .get("https://pincharoma.firebaseio.com/Products/" + this.$route.params.id + ".json/")
         .then(resp => {
           this.productDetail = resp.data;
-          console.log(resp);
+          console.log(resp.data);
         })
         .catch(err => {
           console.log(err);

@@ -20,9 +20,10 @@ export default new Vuex.Store({
   actions: { // methods all API will be here
     fetchProducts(context) {
       axios
-        .get("http://localhost:3000/Products")
+        .get("https://pincharoma.firebaseio.com/Products.json")
         .then(resp => {
           context.commit('setProducts', resp.data);
+          console.log("GOT THE DATA");
         })
         .catch(err => {
           console.log(err);
@@ -40,6 +41,7 @@ export default new Vuex.Store({
   mutations: {
     setProducts(state, products) {
       //update products
+      console.log(products);
       state.products = products
     },
     addToCart(state, product) {

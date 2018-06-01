@@ -8,6 +8,20 @@
 
 <body style="margin:0;">
   <div id="app"></div>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCkUE1PgJz5MCa5TDoSZXS8biCXIqv8lnA",
+      authDomain: "pincharoma.firebaseapp.com",
+      databaseURL: "https://pincharoma.firebaseio.com",
+      projectId: "pincharoma",
+      storageBucket: "pincharoma.appspot.com",
+      messagingSenderId: "22019652863"
+    };
+    firebase.initializeApp(config);
+
+  </script>
   <script src="/dist/build.js"></script>
 </body>
 

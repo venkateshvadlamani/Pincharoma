@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bentham');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Londrina+Shadow');
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 // Font Variables
 $Montserrat: 'Montserrat', sans-serif;
@@ -12,7 +13,6 @@ $Londrina-shadow:  'Londrina Shadow', cursive;
 // Site Fonts
 $family-serif: $Merriweather;
 $family-sans-serif: $Montserrat;
-
 
 
 //Site Colors
@@ -28,7 +28,7 @@ $indigo-dark: #002984;
 $orange: #ff5722;
 $orange-light: #ff8a50;
 $orange-dark: #c41c00;
-$green: #4caf50;
+$green: #4caf50; 
 $green-light: #80e27e;
 $green-dark: #087f23;
 $yellow: #ffeb3b;
@@ -49,3 +49,5 @@ $color-secondary-dark: $orange-dark;
 $text-primary: $grey;
 $text-secondary: $white;
 
+
+// override bootstrap variables

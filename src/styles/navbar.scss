@@ -4,36 +4,54 @@
 // Styling the header and the Navbar 
 header.masthead { 
     .masthead-inner {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        color: $color-primary;
-        padding-left: 2rem;
-        h1 {
-            font-size: 4rem;
-            margin:0;
+        @media (max-width: 600px) {
+            color: $color-primary;
+            padding-left: 1rem;
+            .site-title {
+                h1 {
+                    size: 2rem;
+                    }                
+                }
+            .main-nav {
+                display: flex; 
+                flex-wrap: wrap;
+                
+                }
+            
             }
-
-        .site-title {
-            grid-column: 1/5;
-            align-self: center;
-            justify-self: left;
-        }
-        .main-nav {            
-            grid-column: 10/13;
-            display: flex;
-            justify-content: left;
-            align-self: center;
-            .hor-menu {
-                display: flex;
-                a {
-                    padding: 0;
+        //for wide screens
+        @media (min-width: 600px){
+            display: grid;        
+            grid-template-columns: repeat(12, 1fr);
+            color: $color-primary;
+            padding-left: 2rem;
+            .site-title {
+                grid-column: 1/5;
+                align-self: center;
+                justify-self: left;
+                h1 {
+                    font-size: 3rem;
                     margin: 0.5rem;
-                    color: $color-primary;                    
-                    &:hover{
-                        border-bottom: 10px solid $color-secondary;                        
+                    }
+            }
+            .main-nav {            
+                grid-column: 10/13;
+                display: flex;
+                justify-content: left;
+                align-self: center;
+                .hor-menu {
+                    display: flex;
+                    a {
+                        margin-right:0.6rem;
+                        color: $color-primary;                    
+                        &:hover{
+                            border-bottom: 10px solid $color-primary-dark;                        
+                        }
                     }
                 }
             }
-        }
+
+
+            }
     }
 }

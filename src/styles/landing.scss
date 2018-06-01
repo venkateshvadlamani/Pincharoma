@@ -1,21 +1,22 @@
 main.deals {
 
+    ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem; 
+        }
+
     article.product {
-        display: grid;
-        grid-template-columns: 300px 2fr;
-        grid-gap: 1rem;
         margin: 1rem;
         padding: 1rem;     
-        border-bottom: 1px solid #444;
+        border: 1px solid #444;
         .productimage {
-            grid-column: 1/2;
             img {
                 display: block;
                 width: 100%;    
                 }            
             }
         .productdetails {
-            grid-column: 2/3;    
             align-self: center;        
             }
         .title {

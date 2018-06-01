@@ -5,3 +5,43 @@ h1.title {
     background: yellow;
     justify-self: center;
     }
+
+// media query    
+section.media-query-test {
+    border: 1px solid black;
+    color: white;
+    display: grid;
+    div {
+        height: 100px;
+        width: 100px;
+        background: grey;
+        margin: 1rem;
+        box-shadow: 5px 10px;
+        }        
+    @media(min-width: 700px){
+            div {
+                height: 100px;
+                width: 100px;
+                background: blue;
+                margin: 1rem;
+                box-shadow: 4px 4px #888888;
+                }        
+        }
+    
+    }
+
+// auto-flow dense
+
+// repeat (auto-fit, repeat())
+
+// mondrian
+
+// jan tschitchold
+
+// initial letter 
+
+
+// rafaela ferro
+    section.rafaelaferro {
+        
+    }

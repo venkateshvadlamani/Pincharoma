@@ -1,21 +1,4 @@
-//style the font 
-body, body * {
-    font-family: $family-sans-serif;
-    }
-    
-//style commonly used elements
-header {
-    color: white;
-    }
-
-ul {
-    list-style: none;
-    }
-
-a {
-    text-decoration: none;    
-}
-
+@import './site-variables.scss';
 
 button.issecondary {
         background: $color-secondary;
@@ -26,7 +9,7 @@ button.issecondary {
         margin-top: auto;
         font-size: 1rem;        
         &:hover {
-                background: $text-secondary;
+                background: $color-secondary;
                 color: $color-secondary;
                 border: 2px solid $color-secondary;
                 cursor: pointer;

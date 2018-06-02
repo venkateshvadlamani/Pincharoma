@@ -1,57 +1,31 @@
 @import './site-variables.scss';
-@import './elements.scss';
-
 // Styling the header and the Navbar 
 header.masthead { 
     .masthead-inner {
-        @media (max-width: 600px) {
-            color: $color-primary;
-            padding-left: 1rem;
-            .site-title {
-                h1 {
-                    size: 2rem;
-                    }                
-                }
-            .main-nav {
-                display: flex; 
-                flex-wrap: wrap;
-                
-                }
-            
-            }
-        //for wide screens
-        @media (min-width: 600px){
-            display: grid;        
-            grid-template-columns: repeat(12, 1fr);
-            color: $color-primary;
-            padding-left: 2rem;
-            .site-title {
-                grid-column: 1/5;
-                align-self: center;
-                justify-self: left;
-                h1 {
-                    font-size: 3rem;
-                    margin: 0.5rem;
-                    }
-            }
-            .main-nav {            
-                grid-column: 10/13;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+        .main-nav {            
+            ul {
                 display: flex;
-                justify-content: left;
-                align-self: center;
-                .hor-menu {
-                    display: flex;
-                    a {
-                        margin-right:0.6rem;
-                        color: $color-primary;                    
-                        &:hover{
-                            border-bottom: 10px solid $color-primary-dark;                        
-                        }
+                flex: row;                
+                }
+            a {
+                flex: flex-grow;
+                color: $color-primary;      
+                padding-right: 0.5rem;
+                text-decoration: none;              
+                &:hover {
+                    text-decoration: line-through $color-primary-dark;                        
                     }
+                }                    
+            }
+        .site-title {
+            padding-left: 2rem;
+            h1.title {
+                font-size: 4rem;
                 }
             }
 
-
-            }
+        }
     }
-}

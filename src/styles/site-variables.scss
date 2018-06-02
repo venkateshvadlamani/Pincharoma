@@ -1,53 +1,77 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat:300');
+@import url('https://fonts.googleapis.com/css?family=Arvo|Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Bentham');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Londrina+Shadow');
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 // Font Variables
 $Montserrat: 'Montserrat', sans-serif;
-$Merriweather: 'Merriweather', serif;
+$Arvo: 'Arvo', serif;
 $Bentham: 'Bentham', serif;
 $Londrina-shadow:  'Londrina Shadow', cursive;
 
 // Site Fonts
-$family-serif: $Merriweather;
+$family-serif: $Arvo;
 $family-sans-serif: $Montserrat;
 
 
 //Site Colors
-$grey: #444;
-$white: #fff;
-
-$royal-purple: #7851a9;
-$royal-purple-light: #a97edb;
-$royal-purple-dark: #492679;   
-$indigo: #3f51b5;
-$indigo-light: #757de8;
-$indigo-dark: #002984;    
+$grey: #424242;
+$grey-light: #6d6d6d;
+$grey-dark: #1b1b1b;
+$blue: #0336ff;
+$blue-light: #6f63ff;
+$blue-dark: #0008ca; 
 $orange: #ff5722;
 $orange-light: #ff8a50;
 $orange-dark: #c41c00;
-$green: #4caf50; 
-$green-light: #80e27e;
-$green-dark: #087f23;
-$yellow: #ffeb3b;
-$yellow-light: #ffff72;
-$yellow-dark: #c8b900;
-$red: #f44336;
-$red-light: #ff7961;
-$red-dark: #ba000d;
+$green: #00e676; 
+$green-light: #66ffa6;
+$green-dark: #00b248;
+$yellow: #ffde03;
+$yellow-light: #ffff54;
+$yellow-dark: #c7ad00;
+$red: #ff0266;
+$red-light: #ff5c93;
+$red-dark: #c5003c;
+$white: #fff;
 
-$color-primary: $royal-purple;
-$color-primary-light: $royal-purple-light;
-$color-primary-dark: $royal-purple-dark;
-$color-secondary: $orange;
-$color-secondary-light: $orange-light;
-$color-secondary-dark: $orange-dark;
-
-// Font Colors
-$text-primary: $grey;
-$text-secondary: $white;
+$color-primary: $grey;
+$color-primary-light: $grey-light;
+$color-primary-dark: $grey-dark;
+$color-secondary: $blue;
+$color-secondary-light: $blue-light;
+$color-secondary-dark: $blue-dark;
 
 
 // override bootstrap variables
+$primary:       $color-primary;
+$secondary:     $color-secondary;
+$success:       $green;
+$info:          $grey-light;
+$warning:       $yellow;
+$danger:        $red;
+
+// flat design for buttons. remove styling
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;    
+
+
+// styling various elemejts and controls
+
+body, body * {
+    font-family: $family-serif;
+    color: $primary;
+    }
+h1 {
+    margin:0;
+    padding:0;
+    }    
+//style commonly used elements
+ul {
+    list-style: none;
+    }
+
+a {
+    text-decoration: none;    
+}        

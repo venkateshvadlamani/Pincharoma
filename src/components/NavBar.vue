@@ -1,20 +1,17 @@
 <template>
 
-  <header class="masthead">
+  <header class="masthead">    
     <div class="masthead-inner">
-
-      <div class="site-title">
-        <h1>Pincharoma</h1>
-      </div>
-
       <nav class="main-nav">
         <ul class="hor-menu">
-          <li><a href="#"><router-link to="/">Home</router-link></a></li>
-          <li><a href="#"><router-link :to="{name: 'About'}">About</router-link></a></li>
-          <li><a href="#"><router-link :to="{name: 'Cart'}">Cart</router-link></a></li>
+          <li><a href="#"><router-link to="/">HOME</router-link></a></li>
+          <li><a href="#"><router-link :to="{name: 'About'}">ABOUT</router-link></a></li>
+          <li><a href="#"><router-link :to="{name: 'Cart'}">CART</router-link></a></li>
         </ul>
       </nav>
-
+      <div class="site-title">
+        <h1 class="title">CANON</h1>
+      </div>
     </div>
   </header>
   

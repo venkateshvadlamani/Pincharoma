@@ -8,11 +8,15 @@
           <span>LIMITED</span>
           <span>BATCH</span>
         </h2>
-      </div>      
-      <div class="fresh"><h3><a href="#fresh-panel">FRESH</a></h3></div>
-      <div class="organic"><h3><a href="#organic-panel">ORGANIC</a></h3></div>
-      <div class="transparent"><h3><a href="#transparent-panel">TRANSPARENT</a></h3></div>
-      <div class="fairtrade"><h3><a href="#fairtrade-panel">FAIRTRADE</a></h3></div>
+      </div>
+      <div class="benefits-wrapper">
+        <div class="benefits">
+          <div class="fresh"><h3><a href="#fresh-panel">FRESH</a></h3></div>
+          <div class="organic"><h3><a href="#organic-panel">ORGANIC</a></h3></div>
+          <div class="transparent"><h3><a href="#transparent-panel">TRANSPARENT</a></h3></div>
+          <div class="fairtrade"><h3><a href="#fairtrade-panel">FAIRTRADE</a></h3></div>        
+        </div>      
+      </div>
     </section>
     
     <section id="fresh-panel" class="fresh-panel">

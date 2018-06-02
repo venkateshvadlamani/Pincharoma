@@ -1,0 +1,43 @@
+@import './site-variables.scss';
+.home {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    a {
+        flex: flex-grow;
+        color: $color-primary;      
+        margin-right: 0.7rem;
+        text-decoration: none;              
+        &:hover {
+            text-decoration: none;                        
+            border-bottom: 10px solid $color-secondary;
+            }
+        }           
+    .spices {
+        grid-column: 5/6;
+        grid-row: 1/6;
+        writing-mode: vertical-rl;
+        justify-self: start;
+        align-self: center;
+        h1 {
+            font-size: 7rem;
+            }
+        }
+
+    .limited-batch {
+        grid-column: 2/4;
+        font-size: 150%;
+        }
+    .fresh {
+        grid-column: 2/4;
+        margin-left: 1rem;
+        }
+    .transparent {
+        grid-column: 2/4;
+        margin-left: 1rem;
+        }
+    .organic {
+        grid-column: 2/4;
+        margin-left: 1rem;
+        }
+    }

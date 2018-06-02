@@ -1,33 +1,22 @@
 <template>
   <div class="home">
+
+    <div class="spices"><h1>SPICES</h1></div>
     
- 
-
-    <section class="introduction">
-          Introduce (the problem, about, your services)
-    </section>
-
-    <section class="benefits">
-      Seduce (testimonials, benefits, trust)
-    </section>
-
-    <section class="call-to-action">
-      Convert (call-to-action after behavioral change)
-    </section>
-
-When I returned from travelling, I found that it was very difficult to buy the seasonings and 
-blends I had used while I was abroad. Having the finest flavours from authentic spices really
- does make a difference to cooking, whether you want to create a certain dish or if you’re just
-  experimenting. I wanted to share what I had learned, and hoped that by making these 
-exciting authentic seasonings widely available that I would also offer inspiration to others.
-
-  Freshness -  Spices lose flavor over time. 
-  Transparency
-  Customized to your needs
-  Source - Sustainability - Labor - social issues - Safety of workers 
+    <div class="limited-batch">
+      <h2>
+        <span>LIMITED</span>
+        <span>BATCH</span>
+      </h2>
+    </div>
+    
+    <div class="fresh"><h3><a href="">- FRESH</a></h3></div>
+    <div class="organic"><h3><a href="">- ORGANIC</a></h3></div>
+    <div class="transparent"><h3><a href="">- TRANSPARENT</a></h3></div>
+    <div class="organic"><h3><a href="">- FAIRTRADE</a></h3></div>
+    
 
 
-  sustailibility - LAbor, Social systems
   </div>
 </template>
 

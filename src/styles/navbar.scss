@@ -4,7 +4,7 @@ header.masthead {
     .masthead-inner {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 0.5rem;
+        padding: 0.2rem;
         .main-nav {            
             ul {
                 display: flex;
@@ -13,17 +13,18 @@ header.masthead {
             a {
                 flex: flex-grow;
                 color: $color-primary;      
-                padding-right: 0.5rem;
+                margin-right: 0.7rem;
                 text-decoration: none;              
                 &:hover {
-                    text-decoration: line-through $color-primary-dark;                        
+                    text-decoration: none;                        
+                    border-bottom: 10px solid $color-secondary;
                     }
                 }                    
             }
         .site-title {
-            padding-left: 2rem;
+            padding-left: 1rem;
             h1.title {
-                font-size: 4rem;
+                font-size: 5rem;
                 }
             }
 

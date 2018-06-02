@@ -6,7 +6,10 @@
         <ul class="hor-menu">
           <li><a href="#"><router-link to="/">HOME</router-link></a></li>
           <li><a href="#"><router-link :to="{name: 'About'}">ABOUT</router-link></a></li>
+          <!-- 
           <li><a href="#"><router-link :to="{name: 'Cart'}">CART</router-link></a></li>
+          -->
+          <li><a href="#"><router-link to="/signup">SIGNUP</router-link></a></li>
         </ul>
       </nav>
       <div class="site-title">

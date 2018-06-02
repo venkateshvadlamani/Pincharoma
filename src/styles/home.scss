@@ -15,33 +15,39 @@
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
-        height: 100vh;
+        height: 80vh;
         .spices {
-            grid-column: 7/8;
+            grid-column: 8/9;
             grid-row: 1/6;
             writing-mode: vertical-rl;
-            justify-self: center;
-            align-self: left;
             h1 {
-                font-size: 7rem;
+                letter-spacing: 0.5rem;
+                font-size: 6rem;
                 }
             }
-
         .limited-batch {
             grid-column: 2/5;
             grid-row: 3/4;            
             font-size: 150%;
+            h1 {
+                align-self: bottom;
+                }        
+            }
+        .benefits-readmore {
+            grid-column: 3/4;
+            grid-row: 2/3;            
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);            
             }
         .benefits-wrapper {
             grid-column: 4/6;
             grid-row: 2/4;            
-            margin-left: 1rem;
+            border-left: 15px solid $color-secondary;  
             .benefits {
                 display: flex;
                 flex-direction: column;
-                align-self: space-around;  
-                border-left: 15px solid $color-secondary;  
-                padding: 0.5rem;            
+                padding: 0.5rem;    
+                margin-left: 0;   
                 .fresh {
                     }
                 .transparent {
@@ -56,23 +62,57 @@
         }
 
     .fresh-panel {
-        height: 600px;
-        background-color: red;
-        margin-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr 100px 40px; 
+        .fresh-title {
+            grid-column: 1/4;
+            font-size: 150%;
+            grid-row: 2/3;
+            margin-left: 1rem;
+            justify-self: center;
+            }
+        .fresh-content {
+            grid-column: 4/7;
+            font-size: 150%;
+            grid-row: 1/2;
+            padding-left: 3rem;
+            p {
+                line-height: 2;
+                }
+            }
+        .fresh-image {
+            grid-column: 1/4;
+            grid-row: 1/2;
+            margin-left: 1rem;
+            border: 10px solid $color-primary;
+            img {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                }
+            }            
+        .border-bottom {
+            grid-column: 4/8;
+            grid-row: 3/4;
+            background-color: $color-secondary;
+            }
         }
+
+
+
     .organic-panel {
-        height: 600px;
-        background-color: brown;
-        
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
         }
     .fairtrade-panel {
         height: 600px;
-        background-color: green;
         
         }
     .transparent-panel {
         height: 600px;
-        background-color: blue;
         
         }
 

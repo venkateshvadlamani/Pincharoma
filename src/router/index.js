@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../components/Home'
 import About from '../components/About'
+import SignUp from '../components/SignUp'
 import Cart from '../components/Cart'
 import ProductDetail from '../components/ProductDetail'
 import Catalog from '../components/Catalog'
@@ -14,6 +15,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/signup',
+      name: 'SignUp',
+      component: SignUp
     },
     {
       path: '/catalog',

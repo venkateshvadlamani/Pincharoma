@@ -5,7 +5,8 @@ header.masthead {
         display: grid;
         grid-template-columns: 1fr;
         padding: 0.2rem;
-        .main-nav {            
+        .main-nav {
+            justify-self: right;            
             ul {
                 display: flex;
                 flex: row;                
@@ -24,7 +25,7 @@ header.masthead {
         .site-title {
             padding-left: 1rem;
             h1.title {
-                font-size: 5rem;
+                font-size: 6rem;
                 }
             }
 

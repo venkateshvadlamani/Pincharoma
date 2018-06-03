@@ -1,6 +1,16 @@
 <template>
   <div class="signup">
-    <h1>{{ msg }}</h1>
+
+    <main>
+        <section class=signup-wrapper>
+          <form>
+            <input type=email id="email" /> EMAIL :
+            <input type=password id="email" /> PASSWORD : 
+            <input type=button
+          </form>        
+        </section>
+    </main>
+
   </div>
 </template>
 
@@ -15,6 +25,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+@import "../styles/signup.scss";
 </style>

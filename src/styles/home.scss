@@ -15,6 +15,7 @@
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
+        grid-gap: 10px;
         height: 80vh;
         .spices {
             grid-column: 8/9;
@@ -27,11 +28,12 @@
             }
         .limited-batch {
             grid-column: 2/5;
-            grid-row: 3/4;            
+            grid-row: 4/5;            
             font-size: 150%;
-            h1 {
-                align-self: bottom;
-                }        
+            h2 {
+                margin: 0;
+                align: bottom;
+                }
             }
         .benefits-readmore {
             grid-column: 3/4;
@@ -46,7 +48,7 @@
             .benefits {
                 display: flex;
                 flex-direction: column;
-                padding: 0.5rem;    
+                padding: 1rem;    
                 margin-left: 0;   
                 .fresh {
                     }
@@ -64,7 +66,9 @@
     .fresh-panel {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 1fr 100px 40px; 
+        grid-template-rows: 1fr 100px 30px; 
+        grid-gap: 10px;
+
         .fresh-title {
             grid-column: 1/4;
             font-size: 150%;
@@ -105,6 +109,26 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+        .side-border {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            border-right: 30px solid $color-secondary;
+            z-index:0;
+            }
+        .organic-title {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            font-size: 150%;
+            justify-self: center;
+            padding-top: 0.5rem;
+            z-index:1;
+            h2 {
+                writing-mode: vertical-rl;
+                text-orientation: upright;      
+                letter-spacing: 0.8rem;                
+                }
+            }
 
         }
     .fairtrade-panel {

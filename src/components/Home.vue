@@ -39,13 +39,16 @@
            Our Spices and Seasonings are top notch. 
            The flavors they create will elevate your cooking to a whole new level.
            Our spices and seasonings will go *Boom* in your mouth.
-          <b><a href=#>Give it a try.</a></b></p>
+          <b><a href=#>Give Canon Spices a Try.</a></b></p>
       </div>      
       <div class="border-bottom"></div>
     </section>
 
     <section id="organic-panel" class="organic-panel">
-      <h3>ORGANIC</h3>
+      <div class="side-border"></div>
+      <div class="organic-title">
+        <h2>ORGANIC</h2>
+      </div>
 
 
     </section>
@@ -69,6 +72,6 @@
 <script>
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/home.scss";
 </style>

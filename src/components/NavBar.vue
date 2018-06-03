@@ -13,7 +13,7 @@
         </ul>
       </nav>
       <div class="site-title">
-        <h1 class="title">CANON</h1>
+        <h1 class="title">CANNON</h1>
       </div>
     </div>
   </header>

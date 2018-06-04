@@ -46,7 +46,10 @@
         <h2>ORGANIC</h2>
       </div>
       <div class="organic-content">
-        <p>No pesticides. bout how a food was grown free os pesticides.</p>
+        <p>No pesticides. bout how a food was grown free os pesticides.
+        
+        
+        </p>
       </div>
 
     </section>

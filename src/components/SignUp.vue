@@ -7,10 +7,8 @@
           <div class="signup-form">
             <form action="/action_page.php">
               First name: <input type="text" name="firstname" value="Mickey">
-              <br>
               Last name: <input type="text" name="lastname" value="Mouse">              
-              <br><br>
-              <button type="submit" class="isgrey">Sign Up</button>
+              <button type="submit" class="issecondary">Sign Up</button>
             </form> 
           </div>
 

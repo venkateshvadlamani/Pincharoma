@@ -1,28 +1,32 @@
 @import './site-variables.scss';
 
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+  
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+
 button.issecondary {
         color: $white;
+        background-color: $color-secondary;
         border: 2px solid $color-secondary;
-        background: $color-secondary;
-        margin: 0.5rem;
         padding: 0.5rem;
-        margin-top: auto;
-        font-size: 1rem;        
+        margin:0;
         &:hover {
-                background: white;
+                background-color: $white;
                 color: $color-secondary;
                 border: 2px solid $color-secondary;
                 cursor: pointer;
             }
     }
-button.isgrey {
+button.isprimary {
         color: $white;
-        background: $color-primary;
+        background-color: $color-primary;
         border: 2px solid $color-primary;
-        margin: 0.5rem;
         padding: 0.5rem;
-        margin-top: auto;
-        font-size: 1rem;
         &:hover {
             color: $color-primary;
             background: $white;

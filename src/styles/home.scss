@@ -16,14 +16,27 @@
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
         grid-gap: 10px;
-        height: 80vh;
+        height: 100vh;
         .spices {
-            grid-column: 8/9;
+            grid-column: 7/9;
             grid-row: 1/7;
-            writing-mode: vertical-rl;
+            justify-self: center;
+            letter-spacing: 5px;
             h1 {
-                letter-spacing: 0.5rem;
                 font-size: 6rem;
+                display: grid;
+                grid-column: 1fr;
+                span:nth-child(1) {
+                    writing-mode: vertical-rl;
+                    text-orientation: upright;
+                    grid-row: 1/2;
+                    }
+                span:nth-child(2) {
+                    grid-row: 2/3;
+                    font-size: 3rem;
+                    justify-self: right;
+                    margin-top: 0.5rem;
+                    }
                 }
             }
         .benefits-title {
@@ -31,7 +44,8 @@
             grid-row: 3/4;   
             justify-self: right; 
             align: bottom;
-            font-size: 150%;                    
+            font-size: 150%;
+            letter-spacing: 3px;
             h2 {
                 margin-bottom: 0;
                 }
@@ -40,15 +54,16 @@
             grid-column: 4/7;
             grid-row: 2/5;            
             border-left: 15px solid $color-secondary;
+            align-self: center;
             ul {
                 margin: 0;
                 display: flex;
                 flex-direction: column;
                 padding: 1rem;    
-                height: 100%;
                 align-items: space-between;
                 li {
-                    initial-letter: 2;                
+                    initial-letter: 2;
+                    font-size: 120%;                
                     }
                 }
             }                
@@ -57,9 +72,9 @@
     .fresh-panel {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto-fit;
         grid-gap: 10px;
         padding: 0.5rem;
+        height: 30vh;
         .fresh-title {
             grid-column: 2/7;
             grid-row: 1/2;
@@ -79,6 +94,7 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-gap: 10px;
+        height: 30vh;        
         .organic-title {
             grid-column: 7/12;
             grid-row: 1/2;

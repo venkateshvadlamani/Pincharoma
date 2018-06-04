@@ -1,21 +1,15 @@
-@import './site-variables.scss';
+@import './site-html-elements.scss';
 
 main {
         .signup-wrapper {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             
-            .cannon-wrapper {
-                grid-column: 1/2;
-                grid-row: 1/2;
-
-                }
-
             .signup-form {
                 grid-column: 3/10;
                 grid-row: 2/5;
-                border: 2px solid black;
-                
+                padding: 3rem;
+                border: 2px solid black;            
                 }
 
             }

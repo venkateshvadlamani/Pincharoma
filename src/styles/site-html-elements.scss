@@ -1,32 +1,32 @@
 @import './site-variables.scss';
 
 button.issecondary {
-        background: $color-secondary;
         color: $white;
         border: 2px solid $color-secondary;
+        background: $color-secondary;
         margin: 0.5rem;
         padding: 0.5rem;
         margin-top: auto;
         font-size: 1rem;        
         &:hover {
-                background: $color-secondary;
+                background: white;
                 color: $color-secondary;
                 border: 2px solid $color-secondary;
                 cursor: pointer;
             }
     }
 button.isgrey {
-        background: $white;
-        color: $grey;
-        border: 2px solid $grey;
+        color: $white;
+        background: $color-primary;
+        border: 2px solid $color-primary;
         margin: 0.5rem;
         padding: 0.5rem;
         margin-top: auto;
         font-size: 1rem;
         &:hover {
-            background: $grey;
-            color: $white;
-            border: 2px solid $grey;
+            color: $color-primary;
+            background: $white;
+            border: 2px solid $color-primary;
             cursor: pointer;
         }
     }

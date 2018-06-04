@@ -5,12 +5,14 @@
         <section class=signup-wrapper>
 
           <div class="signup-form">
-              Email:
-
-
+            <form action="/action_page.php">
+              First name: <input type="text" name="firstname" value="Mickey">
+              <br>
+              Last name: <input type="text" name="lastname" value="Mouse">              
+              <br><br>
+              <button type="submit" class="isgrey">Sign Up</button>
+            </form> 
           </div>
-
-
 
 
         </section>

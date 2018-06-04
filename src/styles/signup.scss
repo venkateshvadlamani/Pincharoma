@@ -1,16 +1,33 @@
 @import './site-html-elements.scss';
 
 main {
-        .signup-wrapper {
+    .signup-wrapper {
+        width: 80vw;
+        margin-left:10vw;
+        .form-wrapper {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            
-            .signup-form {
-                grid-column: 3/10;
-                grid-row: 2/5;
-                padding: 3rem;
-                border: 2px solid black;            
+            grid-gap: 10px;
+            border: 2px solid black;            
+            label.email {
+                grid-column: 1/3;
+                grid-row: 1/2; 
+                justify-self: right;
+                align-self: center;                
                 }
-
-            }
+            input.email {
+                grid-column: 3/12;
+                grid-row: 1/2;                                 
+                }
+            .g-recaptcha {
+                grid-column: 3/12;
+                grid-row: 2/3;        
+                margin: 0.5rem;                                         
+                }
+            button.signup {
+                grid-column: 3/12;
+                grid-row: 3/4;        
+                }
+            }                        
+        }
     }

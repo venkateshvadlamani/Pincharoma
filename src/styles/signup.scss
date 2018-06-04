@@ -3,10 +3,13 @@
 main {
     .signup-wrapper {
         width: 80vw;
+        height: 50vh;
         margin-left:10vw;
         .form-wrapper {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+            height: 40%;
+            margin-top: 10%;
             grid-gap: 10px;
             label.email {
                 grid-column: 1/3;

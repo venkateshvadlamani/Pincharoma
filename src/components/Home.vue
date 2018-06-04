@@ -16,11 +16,11 @@
       </div>
       <div class="benefits-wrapper">
         <ul>
-          <li class="fresh"><h3><a href="#fresh-panel">FINEST INGREDIENTS</a></h3></li>
           <li class="transparent"><h3><a href="#transparent-panel">$25 PER MONTH</a></h3></li>
-          <li class="delivery"><h3><a href="#delivery-panel">FREE DELIVERY</a></h3></li>        
+          <li class="fresh"><h3><a href="#fresh-panel">FINEST INGREDIENTS</a></h3></li>
           <li class="organic"><h3><a href="#organic-panel">ORGANIC CERTIFIED</a></h3></li>
           <li class="fairtrade"><h3><a href="#fairtrade-panel">FAIRTRADE COMPLIANT</a></h3></li>        
+          <li class="delivery"><h3><a href="#delivery-panel">FREE DELIVERY</a></h3></li>        
         </ul>      
       </div>
     </section>
@@ -51,7 +51,7 @@
 
     </section>
 
-    <section id="transparent-panel"  class="transparent-panel">
+    <section id="pricing-panel"  class="transparent-panel">
       <h3>TRANSPARENT</h3>
 
 

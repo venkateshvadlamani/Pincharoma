@@ -1,13 +1,22 @@
 @import './site-variables.scss';
 
 main {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-
         .signup-wrapper {
-            grid-column: 3/7;
-            grid-row: 3/7;
-            border: 2px solid $color-primary;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            
+            .cannon-wrapper {
+                grid-column: 1/2;
+                grid-row: 1/2;
+
+                }
+
+            .signup-form {
+                grid-column: 3/10;
+                grid-row: 2/5;
+                border: 2px solid black;
+                
+                }
+
             }
     }

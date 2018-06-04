@@ -3,11 +3,16 @@
 
     <main>
         <section class=signup-wrapper>
-          <form>
-            <input type=email id="email" /> EMAIL :
-            <input type=password id="email" /> PASSWORD : 
-            <input type=button
-          </form>        
+
+          <div class="signup-form">
+              Email:
+
+
+          </div>
+
+
+
+
         </section>
     </main>
 

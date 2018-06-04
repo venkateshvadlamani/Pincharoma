@@ -2,18 +2,25 @@
 
   <header class="masthead">    
     <div class="masthead-inner">
-      <nav class="main-nav">
-        <ul class="hor-menu">
-          <li><a href="#"><router-link to="/">HOME</router-link></a></li>
-          <li><a href="#"><router-link :to="{name: 'About'}">ABOUT</router-link></a></li>
-          <!-- 
-          <li><a href="#"><router-link :to="{name: 'Cart'}">CART</router-link></a></li>
-          -->
-          <li><a href="#"><router-link to="/signup">SIGNUP</router-link></a></li>
-        </ul>
-      </nav>
-      <div class="site-title">
-        <h1 class="title">CANNON</h1>
+      <div class="nav-outer">
+        <nav class="main-nav">
+          <ul class="hor-menu">
+            <li><a href="#"><router-link to="/">HOME</router-link></a></li>
+            <li><a href="#"><router-link :to="{name: 'About'}">ABOUT</router-link></a></li>
+            <!-- 
+            <li><a href="#"><router-link :to="{name: 'Cart'}">CART</router-link></a></li>
+            -->
+            <li><a href="#"><router-link to="/signup">SIGNUP</router-link></a></li>
+          </ul>
+        </nav>
+        <div class="site-title">
+          <h1 class="title">CANNON</h1>
+        </div>
+      </div>
+      <div class="site-logo">
+        <div class="cannon-wrapper">
+          <div class="cannon">..-</div>
+        </div>
       </div>
     </div>
   </header>

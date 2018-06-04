@@ -19,7 +19,7 @@
       </div>
       <div class="site-logo">
         <div class="cannon-wrapper">
-          <div class="cannon">..-</div>
+          <div class="cannon">&#9679&#9679&#9620</div>
         </div>
       </div>
     </div>

@@ -1,17 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo|Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Bentham');
-@import url('https://fonts.googleapis.com/css?family=Londrina+Shadow');
-
-// Font Variables
-$Montserrat: 'Montserrat', sans-serif;
-$Arvo: 'Arvo', serif;
-$Bentham: 'Bentham', serif;
-$Londrina-shadow:  'Londrina Shadow', cursive;
-
-// Site Fonts
-$family-serif: $Arvo;
-$family-sans-serif: $Montserrat;
-
+// Using websafe fonts for the site
+$family-serif: "Times New Roman", Times, serif;
+$family-sans-serif: Avenir, 'Futura W01', helvetica, san-serif;
 
 //Site Colors
 $grey: #424242;
@@ -53,7 +42,7 @@ $danger:        $red;
 ///////////////////////////////////////////////////////////
 // styling various elements and controls
 body, body * {
-    font-family: $family-serif;
+    font-family: $family-sans-serif;
     color: $primary;
     }
 
@@ -66,9 +55,6 @@ ul {
     list-style: none;
     }
 
-a {
-    text-decoration: none;    
-}     
 
 // flat design for buttons. remove styling
 $border-radius:               0;
@@ -127,7 +113,15 @@ input {
     width: 100%;    
     }
 
-// site buttons
+// site buttons and anchors
+
+a.button {
+    text-decoration: none;    
+    text-align: center;
+    display: inline-block;
+    padding: 9px 25px;
+}     
+
 .button {
         &:hover {
                 cursor: pointer;
@@ -140,9 +134,17 @@ input {
         &:hover {
                 background-color: $white;
                 color: $color-secondary;
-                border: 2px solid $color-secondary;
             }
     }
+.issecondary-secondary {
+        color: $white;
+        background-color: $color-secondary;
+        border: 2px solid $color-secondary;
+        &:hover {
+                background-color: $white;
+                color: $color-secondary;
+            }
+    }        
 .isprimary {
         color: $white;
         background-color: $color-primary;
@@ -150,6 +152,14 @@ input {
         &:hover {
             color: $color-primary;
             background: $white;
-            border: 2px solid $color-primary;
+        }
+    }
+.isprimary-inverted {
+        color: $color-primary;
+        background-color: $white;
+        border: 2px solid $color-primary;
+        &:hover {
+            color: $white;
+            background: $color-primary;
         }
     }

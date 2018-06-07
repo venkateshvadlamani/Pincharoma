@@ -1,0 +1,59 @@
+@import './site-variables.scss';
+
+
+main {
+    margin: 1rem;
+    max-width: 500px;
+    margin: 0 auto; }
+
+article {
+  margin: 1rem 0; }
+
+@supports (display: grid) {
+  main {
+    max-width: none;
+    margin: 0; }
+  article {
+    margin: 0; }
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem; } }
+
+article {
+  display: flex;
+  flex-flow: column; }
+
+article > img {
+  order: -1;
+  align-self: center; }
+
+article {
+  padding: 2rem; }
+
+article > h1 {
+  margin: 1rem 1rem 0; }
+
+article > ul {
+  margin: 0 0 1rem; }
+
+article > p {
+  margin: 0.25em 1rem 1rem; }
+
+main {
+  margin: 2rem;;
+}
+
+article {
+    border: 2px solid $color-primary; 
+    box-shadow: 5px 10px $color-primary-dark;
+  }
+
+article > button {
+  margin-top: auto;
+  background: teal;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem; }

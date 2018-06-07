@@ -89,5 +89,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/home.scss";
+@import "../styles/landing.scss";
 </style>

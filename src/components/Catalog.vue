@@ -21,21 +21,20 @@
                 <div class="price">                  
                 <h1>Price: {{ product.itemPrice }}</h1>
               </div>
+              <!-- 
               <div class="select-product">
                   <router-link :to="{name:'ProductDetail', params:{id:product.id}}">
                     <button class="isgrey">Read more</button>
                   </router-link>
                   <button class="issecondary" v-on:click="addToCart(product.id)">Add to Cart</button>
               </div>
+              -->
             </div>
           </article>    
         </li>
       </ul>
 
     </div>    
-
-<pre>{{productList}}</pre>
-
 </div>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
 
-  <header class="masthead">    
+  <header class="masthead">
+    <div class="masthead-outer">
+    </div>
     <div class="masthead-inner">
       <div class="nav-outer">
         <nav class="main-nav">
@@ -13,13 +15,11 @@
             <li><a href="#"><router-link to="/signup">SIGNUP</router-link></a></li>
           </ul>
         </nav>
-        <div class="site-title">
-          <h1 class="title">CANNON</h1>
-        </div>
+
       </div>
       <div class="site-logo">
         <div class="cannon-wrapper">
-          <div class="cannon">&#9679&#9679&#9620</div>
+          <div class="cannon">&#9679&#9679&#10134</div>
         </div>
       </div>
     </div>

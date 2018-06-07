@@ -3,6 +3,9 @@
 
     <section class="main">
       <div class="spices">
+        <div class="site-title">
+          <h1 class="title">CANNON</h1>
+        </div>
         <h1>
           <span>SPICE</span>
           <span>Co.</span>
@@ -56,21 +59,31 @@
 
     <section id="pricing-panel"  class="transparent-panel">
       <h3>TRANSPARENT</h3>
-
-
     </section>
 
     <section id="fairtrade-panel" class="fairtrade-panel">
       <h3>FAIRTRADE</h3>
-
-
+      {{products}}
     </section>
-
 
   </div>
 </template>
 
 <script>
+import { db } from "../firebase.js";
+
+export default {
+  data() {
+    return {
+      products: {},
+      msg: "hello venky"
+    };
+  },
+
+  firebase: {
+    products: db.ref("Products")
+  }
+};
 </script>
 
 <style lang="scss" scoped>

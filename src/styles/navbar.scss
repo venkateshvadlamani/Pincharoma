@@ -1,6 +1,8 @@
 @import './site-variables.scss';
 // Styling the header and the Navbar 
 header.masthead { 
+    .masthead-outer {
+        }
     .masthead-inner {
         display: grid;
         grid-template-columns: repeat(12,1fr);
@@ -25,16 +27,7 @@ header.masthead {
                         border-bottom: 10px solid $color-secondary;
                         }
                     }                    
-                }
-            .site-title {
-                justify-self: right; 
-                align-self: bottom;
-                padding-right: 3rem;           
-                letter-spacing: 5px;
-                h1.title {
-                    font-size: 5rem;
-                    }
-                }            
+                }          
             }
         .site-logo {
             grid-column: 1/3;  

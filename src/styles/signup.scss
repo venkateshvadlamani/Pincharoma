@@ -1,4 +1,4 @@
-@import './site-html-elements.scss';
+@import './site-variables.scss';
 
 main {
     .signup-wrapper {
@@ -9,7 +9,6 @@ main {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             height: 40%;
-            margin-top: 10%;
             grid-gap: 10px;
             label.email {
                 grid-column: 1/3;
@@ -21,14 +20,24 @@ main {
                 grid-column: 3/12;
                 grid-row: 1/2;                                 
                 }
+            label.password {
+                grid-column: 1/3;
+                grid-row: 2/3; 
+                justify-self: right;
+                align-self: center;                
+                }
+            input.password {
+                grid-column: 3/12;
+                grid-row: 2/3;                                 
+                }
             .g-recaptcha {
                 grid-column: 3/12;
-                grid-row: 2/3;        
+                grid-row: 3/4;        
                 margin: 0.5rem;                                         
                 }
             button.signup {
                 grid-column: 3/12;
-                grid-row: 3/4;        
+                grid-row: 4/5;        
                 }
             }                        
         }

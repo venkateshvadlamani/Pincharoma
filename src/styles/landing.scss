@@ -1,0 +1,141 @@
+@import './site-variables.scss';
+.home {
+    a {
+        flex: flex-grow;
+        color: $color-primary;      
+        margin-right: 0.7rem;
+        text-decoration: none;              
+        &:hover {
+            text-decoration: none;                        
+            border-bottom: 10px solid $color-secondary;
+            }
+        }                 
+    .main {
+        height: 100vh;
+        .spices {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 10px;
+            .site-title-horizontal {
+                grid-column: 7/12;
+                grid-row: 1/2;
+                justify-self: right;
+                letter-spacing: 5px;
+                justify-self: right; 
+                align-self: bottom;
+                padding-right: 3rem;           
+                letter-spacing: 5px;
+                h1.title {
+                    font-size: 4rem;
+                    }
+                }         
+            .site-title-vertical {
+                grid-column: 11/12;
+                grid-row: 2/8;                
+                h1 {
+                    font-size: 4rem;
+                    display: grid;
+                    grid-column: 1fr;
+                    span:nth-child(1) {
+                        writing-mode: vertical-rl;
+                        text-orientation: upright;
+                        grid-row: 1/2;
+                            }
+                    span:nth-child(2) {
+                        grid-row: 2/3;
+                        font-size: 2rem;
+                        justify-self: right;
+                        margin-top: 0.5rem;
+                            }   
+                        }
+                    }  
+            .benefits-title {
+                grid-column: 2/6;
+                grid-row: 6/7;   
+                align: bottom;
+                justify-self: right;
+                letter-spacing: 3px;
+                h2 {
+                    flex-direction: column;
+                    margin-bottom: 0;
+                    }
+                }
+            .benefits-wrapper {
+                grid-column: 6/10;
+                grid-row: 4/9;            
+                border-left: 15px solid $color-secondary;
+                align-self: center;
+                ul {
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;    
+                    align-items: space-between;
+                    li {
+                        initial-letter: 2;
+                        font-size: 100%;                
+                        }
+                    }
+                }     
+
+
+                }
+           
+        }
+
+    .fresh-panel {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        padding: 0.5rem;
+        height: 30vh;
+        .fresh-title {
+            grid-column: 2/7;
+            grid-row: 1/2;
+            border-top: 30px solid $color-secondary;
+            }
+        .fresh-content {
+            grid-column: 2/7;
+            grid-row: 2/3;
+            p {
+                line-height: 2;
+                font-size: 110%;
+                }
+            }           
+        }
+
+    .organic-panel {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        padding: 0.5rem;        
+        height: 30vh;            
+        .organic-title {
+            grid-column: 7/12;
+            grid-row: 1/2;
+            border-top: 30px solid $color-secondary;
+            }
+        .organic-content {
+            grid-column: -3/-7;
+            grid-row: 2/3;            
+            p {
+                line-height: 2;
+                font-size: 110%;
+                }
+            }
+        }
+
+    .pricing-panel {
+        height: 600px;
+        
+        }
+
+    .fairtrade-panel {
+        height: 600px;
+        
+        }
+
+
+    
+    }

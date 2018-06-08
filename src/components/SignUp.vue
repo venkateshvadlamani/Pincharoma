@@ -10,7 +10,7 @@
               <label class="password" for="password">Password:</label>
               <input type="password" name="password" placeholder="password" class="password block" v-model=signUpModel.password required>
               <div class="g-recaptcha" data-sitekey="6LfpOF0UAAAAAK6KONqklR12-yktIQg8coz3Rp9b"></div>
-              <button type="submit" class="button issecondary half-block signup">Sign Up</button>
+              <button type="submit" class="button isprimary-inverted half-block signup">Sign Up</button>
             </form> 
 
         </section>
